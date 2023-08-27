@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <style>
+ /* header css start here */
+ .header {
+            height: 40px;
+            width: auto;
+            display: flex;
+            padding: 6px 40px;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--primary-color, #7749F8);
+            color: aliceblue;
+            font-size: 10px;
+        }
+
+        .jhon {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: aliceblue;
+        }
+
+        
+    /* body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    } */
+
+
+        .signup-container {
+            margin: 150px;
+            margin-left: 80px;
+          background-color: white;
+          border-radius: 8px;
+          padding: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          width: 320px;
+        }
+
+        .signup-input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        .signup-button {
+          background-color: purple;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 20px;
+          cursor: pointer;
+          width: 100%;
+        }
+
+        .signup-button:hover {
+          background-color: #8a2be2; 
+        }
+        .header {
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .header h1 {
+    margin: 0;
+  }
+
+   .signup-heading {
+    margin: 0;
+    cursor: pointer;
+  }
+  .header {
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  } 
+
+     .header h1 {
+    margin: 0;
+  } 
+
+     .signup-heading {
+    margin: 0;
+    cursor: pointer;
+  } 
+
+    
+    </style>
+</head>
+<body>
+    
+<section>
+    
+    <!-- header start here -->
+    <div class="header">
+        <h1>PERSONAL BLOG APP</h1>
+        <div class="jhon">
+            <!-- <h2 class="signup-heading">JOHN </h2> -->
+            <h2 class="signup-heading"><a href="./signIn.html"></a>Login</h2>
+        </div>
+    </div>
+
+    <div class="Dashboard">
+        <h1>Sign-UP</h1>
+    </div>
+</section>
+
+<section>
+
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form>
+          <input class="signup-input" type="text" placeholder="Full Name" required>
+          <input class="signup-input" type="text" placeholder="Last Name" required>
+          <input class="signup-input" type="email" placeholder="Email" required>
+          <input class="signup-input" type="password" placeholder="Password" required>
+          <input class="signup-input" type="password" placeholder="Repeat Password" required>
+          <button class="signup-button" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="./firebase.confiq.js"></script>
+        <script src="./app.js"></script>
+
+</section>
+
+
+
+</body>
+</html>
